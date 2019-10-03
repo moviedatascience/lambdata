@@ -1,4 +1,4 @@
-##This is a step by step guide to creating, pushing, and testing a repo that contains packages, classes, and utilities##
+## This is a step by step guide to creating, pushing, and testing a repo that contains packages, classes, and utilities ##
 
 
   1- In Git Bash check to make sure you have conda and pipenv by typing:
