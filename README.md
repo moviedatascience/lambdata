@@ -2,9 +2,10 @@
 
 
   1- In Git Bash check to make sure you have conda and pipenv by typing:
-        `which conda`
 
-        `which pipenv`
+`which conda`
+
+`which pipenv`
 
   2 - create a repo in Github.com with the following features:
   * Name
@@ -19,57 +20,57 @@
 
   3 - Navigate to the github repo url, copy url, and run the following cmd into git bash:
 
-        -  `git clone <https://github.com/moviedatascience/lambdata.git>(copied URL)`
+ `git clone <https://github.com/moviedatascience/lambdata.git>(copied URL)`
 
   4 - Change directory to lambdata by running the following code in git bash:
 
-        -  `cd lambdata`
+`cd lambdata`
 
   5 - Open in atom by typing in git bash:
 
-        -  `atom .`
+`atom .`
 
   6 - Create pipenv by running the command:
 
-        -  `pipenv install numpy pandas`
+`pipenv install numpy pandas`
 
-                  -  Reminder: You can edit the Pipfile manually, but
+Reminder: You can edit the Pipfile manually, but
 
-                  -  ***Never edit the Pipfile.lock file, that's very bad***
+***Never edit the Pipfile.lock file, that's very bad***
 
   7 - Push the updates to github by running:
 
-      -    `git add .` then
+`git add .` then
 
-      -    `git status` then (once your updated files have all turned green)
+`git status` then (once your updated files have all turned green)
 
-      -    `git commit -m "some update message"`
+`git commit -m "some update message"`
 
-      -    `git push`
+`git push`
 
   8 - Configure the git repo?? (honestly not sure why this is a thing)
 
-        -  `git config --global user.name "moviedatascience"`
+`git config --global user.name "moviedatascience"`
 
-        -  `git config --global user.email "moviedatascience@users.noreply.github.com"`
+`git config --global user.email "moviedatascience@users.noreply.github.com"`
 
-        -  `less ~/.gitconfig`
+`less ~/.gitconfig`
 
   9 - Create the package directory by running the command:
 
-        -  `mkdir lambdata_moviedatascience`
+`mkdir lambdata_moviedatascience`
 
-        -  Then nagivate into that directory by running the command:
+Then nagivate into that directory by running the command:
 
-        -    `cd lambdata_moviedatascience`
+`cd lambdata_moviedatascience`
 
   10 - Create the initiation file by running the command:
 
-        -  `touch __innit__.py`
+`touch __innit__.py`
 
-        -  *the __init__.py file lets people know that the folder is a package*
+*the __init__.py file lets people know that the folder is a package*
 
-        -  **you can also just manually add files via text editor**
+**you can also just manually add files via text editor**
 
   11 - Add docstring at the top of your __init__.py file
 
@@ -79,9 +80,9 @@
 
   -  #sample code
 
-  -  ONES = pd.DataFrame(np.ones(10))
+    ONES = pd.DataFrame(np.ones(10))
 
-  -  ZEROS = pd.DataFrame(np.zeros(50))
+    ZEROS = pd.DataFrame(np.zeros(50))
 
   -  *Global variables are in all caps*
 
