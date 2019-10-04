@@ -6,6 +6,9 @@
 
 
 [Day 1 package creation walkthrough](#create-package)
+
+[Useful Definitions given on Thursday](#useful-definitions-or-example-questions)
+
 # Create Package
 1- In Git Bash check to make sure you have conda and pipenv by typing:
 
