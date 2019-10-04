@@ -189,7 +189,7 @@ with open("README.md", "r") as fh:
    "Operating System :: OS Independent",
    ]
    )
-    ```
+  ```
 
 24 - Create package using Twine in anaconda prompt:
 
@@ -221,7 +221,9 @@ Then enter your username and password from the test pypi account you created ear
 39 -
 40 -
 
+
 # Useful Definitions or Example Questions
+
 ---
 
 * What does a constructor do in a Python class?
