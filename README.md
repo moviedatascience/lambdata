@@ -5,6 +5,8 @@
 ###### Disclaimer: Windows only, things will be different (read: easier) in linux or macOS :sweat:
 
 
+[Day 1 package creation walkthrough](#create-package)
+# Create Package
 1- In Git Bash check to make sure you have conda and pipenv by typing:
 
 - `which conda`
