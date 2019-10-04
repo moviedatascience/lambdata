@@ -229,19 +229,19 @@ Then enter your username and password from the test pypi account you created ear
 
 ---
 
-* What does a constructor do in a Python class?
+* What does a __constructor__ do in a Python class?
 
   * Used to initialize a class
 
-* Why would you use inheritance in one of your scripts?
+* Why would you use __inheritance__ in one of your scripts?
 
   * To reduce the amount of code you're writing and cuts down on the amount of code copying you need to do.
 
-* What is the syntax for using inheritance and instantiating a new class from a parent class?
+* What is the syntax for using __inheritance and instantiating a new class__ from a parent class?
 
   * Class TicTacToe(Game):
 
-* What are the benefits of using docker?
+* What are the benefits of using __docker__?
 
   * Allows you to test in a virtual environment without breaking something important
 
