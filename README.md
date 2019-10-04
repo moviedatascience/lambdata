@@ -1,7 +1,11 @@
-## This is a step by step guide to creating, pushing, and testing a repo that contains packages, classes, and utilities ##
+# :heart_eyes:	 Packages guide :heart_eyes:
+
+## This is a step by step guide to creating, pushing, and testing a repo that contains packages, classes, and utilities
+
+###### Disclaimer: Windows only, things will be different (read: easier) in linux or macOS :sweat:
 
 
-  1- In Git Bash check to make sure you have conda and pipenv by typing:
+1- In Git Bash check to make sure you have conda and pipenv by typing:
 
 - `which conda`
 
@@ -115,14 +119,16 @@ and run those to verify
 17 - Add the following to your df_utils.py file
 
 -  """" utility functions for working with dataframes"""
+
           import pandas
+
           TEST_DF = pandas.DataFrame([1, 2, 3])"
 
 18 - Go back to anaconda prompt and run:
 
 -  `from lambdata_moviedatascience import df_utils`
 
--  *Just checking that it can be imported here*
+  *Just checking that it can be imported here*
 
 19 - Go back to git bash and add the new files you've created:
 
@@ -134,4 +140,53 @@ and run those to verify
 
 -  `git push`
 
-20 -
+20 - Create test pypi account at:
+
+<https://test.pypi.org/>
+
+21 - Install twine in your gitbash using:
+
+`pipenv install -d twine`
+
+22 - Create the setup.py file in the lambdata directory:
+
+`touch setup.py`
+
+### Note: setup needs to be under the parent directory as it allows users to install the package
+
+23 - Add the following text to the setup.py file:
+
+> """
+> A collection of DS helper functions
+>
+> """
+>
+> import setuptools
+>
+> REQUIRED = [
+>     "numpy",
+>     "pandas"
+> ]
+>
+> with open("README.md", "r") as fh:
+>     LONG_DESCRIPTION = fh.read()
+>     setuptools.setup(
+>     name="lambdata-moviedatascience",
+>     version = "0.1.1",
+>     author = "moviedatascience",
+>     description = "a collection of data science helper functions",
+>     long_description = LONG_DESCRIPTION,
+>     long_description_content_type="text/markdown",
+>     url="https://lambdaschool.com/courses/data-science",
+>     packages=setuptools.find_packages(),
+>     python_requires=">=3.5",
+>     install_requires = REQUIRED,
+>     classifiers=["Programming Language :: Python :: 3",
+>     "License :: OSI Approved :: MIT License",
+>     "Operating System :: OS Independent",
+>     ]
+>     )
+
+24 -
+25 -
+26 -
