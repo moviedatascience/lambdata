@@ -204,3 +204,40 @@ Then enter your username and password from the test pypi account you created ear
 
 
 26 -
+27 -
+28 -
+29 -
+30 -
+31 -
+32 -
+33 -
+34 -
+35 -
+36 -
+37 -
+38 -
+39 -
+40 -
+
+# Useful Definitions or Example Questions
+---
+
+* What does a constructor do in a Python class?
+
+  * Used to initialize a class
+
+* Why would you use inheritance in one of your scripts?
+
+  * To reduce the amount of code you're writing and cuts down on the amount of code copying you need to do.
+
+* What is the syntax for using inheritance and instantiating a new class from a parent class?
+
+  * Class TicTacToe(Game):
+
+* What are the benefits of using docker?
+
+  * Allows you to test in a virtual environment without breaking something important
+
+* _Unit Tests_ are better because they save time by running all functions at once instead of running each function one at a time.
+
+  * also helps on larger projects when you change code to make sure your original code still works
