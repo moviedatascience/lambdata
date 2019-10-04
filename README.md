@@ -144,7 +144,7 @@ and run those to verify
 
 <https://test.pypi.org/>
 
-21 - Install twine in your gitbash using:
+21 - Install twine in your anaconda prompt using:
 
 `pipenv install -d twine`
 
@@ -156,37 +156,51 @@ and run those to verify
 
 23 - Add the following text to the setup.py file:
 
-> """
-> A collection of DS helper functions
->
-> """
->
-> import setuptools
->
-> REQUIRED = [
->     "numpy",
->     "pandas"
-> ]
->
-> with open("README.md", "r") as fh:
->     LONG_DESCRIPTION = fh.read()
->     setuptools.setup(
->     name="lambdata-moviedatascience",
->     version = "0.1.1",
->     author = "moviedatascience",
->     description = "a collection of data science helper functions",
->     long_description = LONG_DESCRIPTION,
->     long_description_content_type="text/markdown",
->     url="https://lambdaschool.com/courses/data-science",
->     packages=setuptools.find_packages(),
->     python_requires=">=3.5",
->     install_requires = REQUIRED,
->     classifiers=["Programming Language :: Python :: 3",
->     "License :: OSI Approved :: MIT License",
->     "Operating System :: OS Independent",
->     ]
->     )
+```
+"""
+A collection of DS helper functions
 
-24 -
-25 -
+"""
+
+import setuptools
+
+REQUIRED = [
+     "numpy",
+    "pandas"
+]
+
+with open("README.md", "r") as fh:
+   LONG_DESCRIPTION = fh.read()
+   setuptools.setup(
+   name="lambdata-moviedatascience",
+   version = "0.1.1",
+   author = "moviedatascience",
+   description = "a collection of data science helper functions",
+   long_description = LONG_DESCRIPTION,
+   long_description_content_type="text/markdown",
+   url="https://lambdaschool.com/courses/data-science",
+   packages=setuptools.find_packages(),
+   python_requires=">=3.5",
+   install_requires = REQUIRED,
+   classifiers=["Programming Language :: Python :: 3",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: OS Independent",
+   ]
+   )
+    ```
+
+24 - Create package using Twine in anaconda prompt:
+
+```
+python setup.py sdist bdist_wheel
+
+```
+
+25 - Use twine to upload
+
+`twine upload --repository-url https://test.pypi.org/legacy/ dist/*`
+
+Then enter your username and password from the test pypi account you created earlier
+
+
 26 -
